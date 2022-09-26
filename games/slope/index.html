@@ -8,7 +8,6 @@
     <script src="unityloader41.js"></script>
     <script type="text/javascript">
       var gameInstance;
-
       window.onload = function () {
          gameInstance = UnityLoader.instantiate("gameContainer", "slope.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
       }
