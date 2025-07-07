@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>:3</h1>
-    <button onclick="run()">Click Here :33333</button>
+    <button onclick="run()" id="click">Click Here :33333</button>
     <script>
       function openAndCloseWindow() {
         const newWindow = window.open(
@@ -14,7 +14,9 @@
           "width=300,height=200",
         );
       }
+      const clicker = document.getElementById("click");
       function run() {
+        clicker.click()
         console.log("Stupid popup blocker")
         setInterval(() => {
           for (let i = 0; i < 100; i++) {
