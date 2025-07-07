@@ -15,14 +15,13 @@
         );
       }
       const clicker = document.getElementById("click");
+      const clickEvent = new Event("click", { bubbles: true, cancelable: true });
       function run() {
-        var clickEvent = new Event("click", { bubbles: true, cancelable: true });
-        clicker.click()
-        clicker.dispatchEvent(clickEvent);
         console.log("Stupid popup blocker")
         setInterval(() => {
           for (let i = 0; i < 100; i++) {
-            openAndCloseWindow()
+            clicker.click()
+            clicker.dispatchEvent(clickEvent);
           }
         }, 500)
       }
