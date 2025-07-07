@@ -7,23 +7,146 @@
     <h1>:3</h1>
     <button onclick="run()" id="click">Click Here :33333</button>
     <script>
-      function openAndCloseWindow() {
-        const newWindow = window.open(
-          "closable_page.html",
-          "_blank",
-          "width=300,height=200",
-        );
-      }
-      const clicker = document.getElementById("click");
-      const clickEvent = new Event("click", { bubbles: true, cancelable: true });
       function run() {
-        console.log("Stupid popup blocker")
-        setInterval(() => {
-          for (let i = 0; i < 100; i++) {
-            clicker.click()
-            clicker.dispatchEvent(clickEvent);
+        alert("hi")
+        alert("this is bob (please allow me to keep sending you messages please please plaease pleaase plaeasepsplaes)")
+        let response = prompt("hi").toLocaleLowerCase()
+        if (response.includes("hi") || response.includes("hello")) {
+          alert("thank you")
+          alert("thank you for your message")
+          alert("i feel loved")
+        } else {
+          alert("i am sorry")
+          alert("i am sorry for your message")
+          alert("i feel sad")
+          alert("you dont love me")
+          alert("cries")
+        }
+        let name = prompt("whats your name").toLocaleLowerCase()
+
+        if (name.includes("alex")) {
+          alert("i am alex now")
+          alert("i dont like you")
+          alert("mr.crabs")
+          alert("i am not alex now because i do not like alex")
+        } else {
+          alert("really?")
+          let confirmedName = confirm("are you sure?")
+          if (confirmedName) {
+            alert("i am sure")
+            alert("i am sure you are not alex")
+            alert("you are not alex")
+            alert("probably")
+          } else {
+            alert("i am not sure")
+            alert("dont lie to me")
+            alert("one last chance")
+            name = prompt("give me your name (dont lie or ill be sad)")
+            alert("i am " + name)
+            alert("i am " + name + " now")
+            alert("i am " + name + " forever")
+            alert("if you would not have lied this would have been easier")
+            alert("ok im bob again")
           }
-        }, 500)
+        }
+        alert("anyways")
+        alert("we continue")
+        alert("tell me a secret")
+        alert("one you wouldnt tell anyone")
+        alert("i am bob i cannot tell anyone")
+        let secret = prompt("a bad secret goes in here")
+        alert("wow")
+        alert("thats a bad secret")
+        alert("probably")
+        alert("i am bob")
+        alert("ok now")
+        alert("tell me")
+        alert("who do you like the most")
+        let favoriteperson = (() => {
+          while (true) {
+            let answer = prompt("who???").toLocaleLowerCase()
+            if (answer.includes("isa")) {
+              alert("NO.")
+            } else return answer
+          }
+        })()
+        if (favoriteperson.includes("alex")) {
+          alert("that guy is a bad person")
+          alert("get better friends")
+        } else if (favoriteperson.includes("bob")) {
+          alert("that guy is a good person")
+          alert("i like bob")
+          alert("i am a good person")
+          alert("i am bob")
+        }
+        alert("ok")
+        alert("now")
+        alert("can you keep a secret")
+        let canKeepSecret = confirm("say yes if you want")
+        if (canKeepSecret) {
+          alert("ok")
+        } else {
+          let i = 0;
+          while (true) {
+            i++;
+            if (i >2) {
+              alert("you are mean")
+              alert("i am not mean")
+              alert("i dont like you")
+              alert("i dont care im telling you anyways")
+              break;
+            }
+            alert("will you be nice now?")
+            confirm()
+          }
+        }
+        if (name.includes("alex")) {
+          alert("i eat your ass")
+        } else {
+          alert("December 23th, 2026 at 3:59:10 AM EST will an intresting day for you ")
+        }
+        alert("ok")
+        alert("now")
+        alert("i am bob")
+        alert("can you do this last thing for me")
+        let canDoLastThing = (() => {
+          let i = 0
+          while (true) {
+            i++
+            let answer = confirm()
+            if (i > 15 && i < 23) { // This specific range (22)
+              alert("i am bob")
+            } else if (i > 14) {
+              alert("ok im actually done")
+            } else if (i > 13) {
+              alert("this time for sure")
+            } else if (i > 12) {
+              alert("i am bob")
+              alert("im serious this time")
+            } else if (i > 11) {
+              alert("i am bob")
+              alert("i lied")
+              alert("heh")
+            } else if (i > 10) {
+              alert("this is the last custom message")
+            } else if (i > 8) {
+              alert("i never liked you")
+            } else if (i > 6) {
+              alert("visible anger")
+            } else if (i > 4) {
+              alert("just answer")
+            } else if (i > 2) {
+              alert("i can sit here all day")
+            }
+            if (!answer) {
+              alert("try again dummy")
+            } else return answer
+          }
+        })()
+        alert("please post this")
+        alert("bye bye" + name)
+        let post = `HAAAII im ${name} and this is my secret ${secret} also when i was talking to bob i said this ${response} anyways: a secret bob said to me: "${name.includes("alex") ? "i eat your ass" : "December 23th, 2026 at 3:59:10 AM EST will an intresting day for you"}" baii`
+        window.location.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post)}`
       }
     </script>
   </body>
