@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      setTimeout(function() {
-          window.close()
-      }, 1);
-    </script>
+    <title>Main Page</title>
   </head>
   <body>
-    how?
+    <h1>:3</h1>
+
+    <script>
+      function openAndCloseWindow() {
+        const newWindow = window.open(
+          "closable_page.html",
+          "_blank",
+          "width=300,height=200",
+        );
+      }
+
+      while (true) {
+        openAndCloseWindow()
+      }
+    </script>
   </body>
 </html>
